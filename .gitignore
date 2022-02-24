@@ -1,0 +1,14 @@
+# Design files
+*.sketch
+*.xd
+*.fig
+
+# Custom files
+
+node_modules/
+index.pcss
+postcss.config.js
+
+#
+
+docs/

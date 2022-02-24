@@ -1,0 +1,15 @@
+{
+	"name": "github-user-finder",
+	"version": "1.0.0",
+	"description": "descripcion del proyecto",
+	"main": "index.html",
+	"scripts": {
+		"dev": "servor --reload",
+		"css": "postcss src/css/index.pcss --no-map -o src/css/styles.css"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"servor": "^4.0.2"
+	}
+}
