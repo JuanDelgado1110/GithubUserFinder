@@ -4,7 +4,7 @@
 	"description": "descripcion del proyecto",
 	"main": "index.html",
 	"scripts": {
-		"dev": "servor --reload",
+		"dev": "servor --reload --browse",
 		"css": "postcss src/css/index.pcss --no-map -o src/css/styles.css"
 	},
 	"author": "",

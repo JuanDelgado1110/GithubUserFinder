@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Github User Finder</title>
+
+		<link rel="shortcut icon" href="/src/assets/images/favicon-32x32.png" type="image/x-icon" />
+
+		<link rel="stylesheet" href="./src/css/styles.css" />
+
+		<script src="/src/javascript/scripts.js" defer type="module"></script>
+	</head>
+	<body>
+		<div id="root" class="root">
+			<main class="userFinder">
+				<header class="header">
+					<h1 class="title header__title">github dev finder</h1>
+
+					<div class="themeSwitcher">
+						<span class="themeSwitcher__mode">light</span>
+
+						<div class="themeSwitcher__imageContainer">
+							<img src="/src/assets/images/icons/icon-sun.svg" alt="sun icon" class="themeSwitcher__imgMode" />
+						</div>
+					</div>
+
+					<div class="seeker">
+						<form action="" id="finder" class="seeker__form">
+							<input name="userName" id="userNameSeeker" placeholder="github username..." class="input seeker__input" />
+							<button class="button seeker__button">search</button>
+						</form>
+					</div>
+				</header>
+
+				<article class="infoContainer"></article>
+			</main>
+		</div>
+	</body>
+</html>

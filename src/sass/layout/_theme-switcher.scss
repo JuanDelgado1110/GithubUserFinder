@@ -1,0 +1,16 @@
+.themeSwitcher {
+	width: 50%;
+	margin-left: auto;
+	position: relative;
+
+	&__mode {
+		font-weight: 300;
+		text-transform: capitalize;
+	}
+
+	&__imageContainer {
+		position: absolute;
+		top: -4px;
+		right: 10px;
+	}
+}

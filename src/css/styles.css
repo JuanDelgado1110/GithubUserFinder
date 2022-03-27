@@ -1,0 +1,278 @@
+@font-face {
+  font-family: "Roboto Serif";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/src/assets/fonts/RobotoSerif-Regular.ttf") format("truetype");
+}
+
+:root {
+  --color-1: #141c2f;
+  --color-2: #1f2a48;
+  --color-3: #0079ff;
+  --color-4: #ffffff;
+  --color-5: #66718c;
+  --body-fontFamily: "Roboto Serif", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  font-size: 16px;
+  font-family: var(--body-fontFamily);
+  background-color: var(--color-1);
+  color: var(--color-4);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+input,
+button {
+  font-family: inherit;
+}
+
+.userFinder {
+  margin: auto;
+  width: 90vw;
+}
+
+.header {
+  margin-bottom: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 10px;
+}
+
+.header__title {
+  margin: 0;
+  font-size: 1rem;
+  text-transform: capitalize;
+}
+
+.themeSwitcher {
+  width: 50%;
+  margin-left: auto;
+  position: relative;
+}
+
+.themeSwitcher__mode {
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.themeSwitcher__imageContainer {
+  position: absolute;
+  top: -4px;
+  right: 10px;
+}
+
+.seeker {
+  padding: 1em;
+  grid-column: 1 / 3;
+  border-radius: 5px;
+  background-color: var(--color-2);
+}
+
+.seeker__form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.seeker__input {
+  width: 70%;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--color-2);
+  font-size: 1rem;
+  text-transform: capitalize;
+  background-color: var(--color-2);
+  color: var(--color-4);
+  transition: border-bottom 0.3s ease;
+}
+
+.seeker__input:focus {
+  border-bottom: 1px solid var(--color-3);
+}
+
+.seeker__button {
+  padding: 1em 1em;
+  border: none;
+  border-radius: 5px;
+  text-transform: capitalize;
+  background-color: var(--color-3);
+  color: var(--color-4);
+  box-shadow: inset 0 -3px var(--color-1);
+}
+
+.seeker__button:active {
+  box-shadow: inset 0 3px var(--color-1);
+}
+
+.seeker {
+  padding: 1em;
+  grid-column: 1 / 3;
+  border-radius: 5px;
+  background-color: var(--color-2);
+}
+
+.seeker__form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.seeker__input {
+  width: 70%;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--color-2);
+  font-size: 1rem;
+  text-transform: capitalize;
+  background-color: var(--color-2);
+  color: var(--color-4);
+  transition: border-bottom 0.3s ease;
+}
+
+.seeker__input:focus {
+  border-bottom: 1px solid var(--color-3);
+}
+
+.seeker__button {
+  padding: 1em 1em;
+  border: none;
+  border-radius: 5px;
+  text-transform: capitalize;
+  background-color: var(--color-3);
+  color: var(--color-4);
+  box-shadow: inset 0 -3px var(--color-1);
+}
+
+.seeker__button:active {
+  box-shadow: inset 0 3px var(--color-1);
+}
+
+.searchMessage__imageContainer {
+  width: 50%;
+  margin: auto;
+}
+
+.searchMessage__paragraph {
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.userInfo {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  column-gap: 20px;
+}
+
+.userInfo__userName {
+  margin: 0;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  text-transform: capitalize;
+}
+
+.userInfo__imageContainer {
+  grid-row: 1 / 4;
+  grid-column: 1 / 2;
+}
+
+.userInfo__profileImage {
+  border-radius: 50%;
+}
+
+.userInfo__twitterUsername {
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  color: var(--color-3);
+}
+
+.userInfo__joinDate {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+}
+
+.userInfo__description {
+  grid-row: 4 / 5;
+  grid-column: 1 / 3;
+  text-align: justify;
+}
+
+.githubInfo {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  background-color: var(--color-1);
+}
+
+.githubInfo__repositories, .githubInfo__follows, .githubInfo__followings {
+  text-align: center;
+}
+
+.githubInfo__repositories--text, .githubInfo__follows--text, .githubInfo__followings--text {
+  text-transform: capitalize;
+  font-weight: 300;
+}
+
+.githubInfo__repositories--number, .githubInfo__follows--number, .githubInfo__followings--number {
+  font-weight: 700;
+}
+
+.root {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.infoContainer {
+  padding: 1em;
+  background-color: var(--color-2);
+}
+
+.extraInfo__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.extraInfo__listItem {
+  margin-left: 0.5em;
+}
+
+.extraInfo__imageContainer {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5em;
+  display: inline-block;
+}
+
+.extraInfo__githubLink, .extraInfo__twitterLink {
+  color: var(--color-3);
+  text-decoration: underline;
+}

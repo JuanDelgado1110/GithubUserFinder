@@ -1,0 +1,24 @@
+.extraInfo {
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+
+		&Item {
+			margin-left: 0.5em;
+		}
+	}
+
+	&__imageContainer {
+		width: 20px;
+		height: 20px;
+		margin-right: 0.5em;
+		display: inline-block;
+	}
+
+	&__githubLink,
+	&__twitterLink {
+		color: var(--color-3);
+		text-decoration: underline;
+	}
+}

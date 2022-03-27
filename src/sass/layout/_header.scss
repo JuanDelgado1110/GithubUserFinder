@@ -1,0 +1,12 @@
+.header {
+	margin-bottom: 1em;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	row-gap: 10px;
+
+	&__title {
+		margin: 0;
+		font-size: 1rem;
+		text-transform: capitalize;
+	}
+}
